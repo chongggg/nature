@@ -633,6 +633,292 @@ button:hover ~ .cursor::before {
     }
 }
 
+/* ============================================
+   FOREST ANIMALS ANIMATIONS
+   ============================================ */
+
+.forest-animals {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 4;
+}
+
+/* Birds Flying Across */
+.bird {
+    position: absolute;
+    font-size: 2rem;
+    animation: flyAcross 25s linear infinite;
+    z-index: 8;
+}
+
+.bird-1 {
+    top: 15%;
+    animation-delay: 0s;
+    animation-duration: 20s;
+}
+
+.bird-2 {
+    top: 25%;
+    animation-delay: 8s;
+    animation-duration: 28s;
+}
+
+.bird-3 {
+    top: 12%;
+    animation-delay: 15s;
+    animation-duration: 24s;
+}
+
+@keyframes flyAcross {
+    0% {
+        left: -10%;
+        transform: scale(1) rotateY(0deg);
+    }
+    45% {
+        transform: scale(1) rotateY(0deg);
+    }
+    50% {
+        transform: scale(1) rotateY(180deg);
+    }
+    55% {
+        transform: scale(1) rotateY(180deg);
+    }
+    100% {
+        left: 110%;
+        transform: scale(1) rotateY(180deg);
+    }
+}
+
+/* Deer Walking */
+.deer {
+    position: absolute;
+    font-size: 3rem;
+    bottom: 15%;
+    animation: walkAcross 35s linear infinite;
+    z-index: 3;
+}
+
+.deer-1 {
+    animation-delay: 2s;
+    animation-duration: 40s;
+}
+
+.deer-2 {
+    animation-delay: 22s;
+    animation-duration: 45s;
+    bottom: 18%;
+}
+
+@keyframes walkAcross {
+    0% {
+        left: -10%;
+        transform: scaleX(1);
+    }
+    48% {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(-1);
+    }
+    52% {
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 110%;
+        transform: scaleX(-1);
+    }
+}
+
+/* Rabbits Hopping */
+.rabbit {
+    position: absolute;
+    font-size: 1.8rem;
+    bottom: 12%;
+    animation: hopAcross 20s ease-in-out infinite;
+    z-index: 5;
+}
+
+.rabbit-1 {
+    animation-delay: 5s;
+    animation-duration: 18s;
+}
+
+.rabbit-2 {
+    animation-delay: 15s;
+    animation-duration: 22s;
+    bottom: 14%;
+}
+
+@keyframes hopAcross {
+    0% {
+        left: -5%;
+        transform: translateY(0) scaleX(1);
+    }
+    5% {
+        transform: translateY(-30px) scaleX(1);
+    }
+    10% {
+        transform: translateY(0) scaleX(1);
+    }
+    15% {
+        transform: translateY(-30px) scaleX(1);
+    }
+    20% {
+        transform: translateY(0) scaleX(1);
+    }
+    25% {
+        transform: translateY(-30px) scaleX(1);
+    }
+    30% {
+        transform: translateY(0) scaleX(1);
+    }
+    48% {
+        transform: translateY(0) scaleX(1);
+    }
+    50% {
+        transform: translateY(0) scaleX(-1);
+    }
+    55% {
+        transform: translateY(-30px) scaleX(-1);
+    }
+    60% {
+        transform: translateY(0) scaleX(-1);
+    }
+    65% {
+        transform: translateY(-30px) scaleX(-1);
+    }
+    70% {
+        transform: translateY(0) scaleX(-1);
+    }
+    75% {
+        transform: translateY(-30px) scaleX(-1);
+    }
+    80% {
+        transform: translateY(0) scaleX(-1);
+    }
+    100% {
+        left: 105%;
+        transform: translateY(0) scaleX(-1);
+    }
+}
+
+/* Butterflies Floating */
+.butterfly {
+    position: absolute;
+    font-size: 1.5rem;
+    animation: butterflyFloat 15s ease-in-out infinite;
+    z-index: 6;
+}
+
+.butterfly-1 {
+    top: 35%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.butterfly-2 {
+    top: 45%;
+    left: 60%;
+    animation-delay: 5s;
+}
+
+.butterfly-3 {
+    top: 40%;
+    left: 30%;
+    animation-delay: 10s;
+}
+
+@keyframes butterflyFloat {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(50px, -40px) rotate(10deg);
+    }
+    50% {
+        transform: translate(100px, -20px) rotate(-10deg);
+    }
+    75% {
+        transform: translate(50px, -50px) rotate(5deg);
+    }
+}
+
+/* Fox Running */
+.fox {
+    position: absolute;
+    font-size: 2.2rem;
+    bottom: 13%;
+    animation: foxRun 30s linear infinite;
+    z-index: 4;
+    animation-delay: 10s;
+}
+
+@keyframes foxRun {
+    0% {
+        left: -8%;
+        transform: scaleX(1);
+    }
+    45% {
+        transform: scaleX(1);
+    }
+    50% {
+        left: 50%;
+        transform: scaleX(-1);
+    }
+    100% {
+        left: 110%;
+        transform: scaleX(-1);
+    }
+}
+
+/* Squirrel Climbing */
+.squirrel {
+    position: absolute;
+    font-size: 1.8rem;
+    animation: squirrelClimb 25s ease-in-out infinite;
+    z-index: 4;
+    animation-delay: 3s;
+}
+
+@keyframes squirrelClimb {
+    0% {
+        left: 20%;
+        bottom: 15%;
+        transform: scaleX(1);
+    }
+    25% {
+        left: 22%;
+        bottom: 50%;
+        transform: scaleX(1) rotate(0deg);
+    }
+    30% {
+        transform: scaleX(-1) rotate(0deg);
+    }
+    50% {
+        left: 20%;
+        bottom: 50%;
+        transform: scaleX(-1);
+    }
+    75% {
+        left: 18%;
+        bottom: 15%;
+        transform: scaleX(-1);
+    }
+    80% {
+        transform: scaleX(1);
+    }
+    100% {
+        left: 20%;
+        bottom: 15%;
+        transform: scaleX(1);
+    }
+}
+
 /* Hero Content */
 .hero-content {
     text-align: center;
@@ -907,6 +1193,129 @@ button:hover ~ .cursor::before {
     font-size: 1.05rem;
 }
 
+/* About Card Interactive Effects */
+.animated-leaf {
+    position: absolute;
+    font-size: 2rem;
+    opacity: 0.3;
+    animation: floatLeaf 8s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.animated-leaf.leaf-1 {
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.animated-leaf.leaf-2 {
+    top: 60%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+.animated-leaf.leaf-3 {
+    bottom: 20%;
+    left: 15%;
+    animation-delay: 4s;
+}
+
+@keyframes floatLeaf {
+    0%, 100% { 
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0.3;
+    }
+    25% { 
+        transform: translate(20px, -30px) rotate(10deg);
+        opacity: 0.5;
+    }
+    50% { 
+        transform: translate(40px, -10px) rotate(-10deg);
+        opacity: 0.4;
+    }
+    75% { 
+        transform: translate(20px, -20px) rotate(5deg);
+        opacity: 0.6;
+    }
+}
+
+/* Tilt Effect */
+.about-card[data-tilt] {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.about-card[data-tilt]:hover {
+    transform: translateY(-15px) rotateX(5deg) rotateY(5deg) scale(1.03);
+}
+
+/* Icon Ripple Effect */
+.icon-ripple {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 80px;
+    height: 80px;
+    border: 3px solid var(--forest-light);
+    border-radius: 50%;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.about-card:hover .icon-ripple {
+    animation: rippleExpand 1.5s ease-out forwards;
+}
+
+@keyframes rippleExpand {
+    0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Card Glow Effect */
+.card-glow {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, 
+        var(--forest-bright), 
+        var(--leaf-green), 
+        var(--forest-light),
+        var(--forest-bright));
+    background-size: 400% 400%;
+    border-radius: 25px;
+    opacity: 0;
+    z-index: -1;
+    filter: blur(20px);
+    transition: opacity 0.5s ease;
+}
+
+.about-card:hover .card-glow {
+    opacity: 0.6;
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+    0%, 100% { 
+        background-position: 0% 50%;
+        filter: blur(20px);
+    }
+    50% { 
+        background-position: 100% 50%;
+        filter: blur(25px);
+    }
+}
+
 /* ============================================
    GALLERY SECTION
    ============================================ */
@@ -1035,6 +1444,69 @@ button:hover ~ .cursor::before {
 
 .gallery-card:hover .overlay-leaf {
     transform: translateY(0) rotate(360deg);
+}
+
+/* Gallery Card Shine Effect */
+.card-shine {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, 
+        transparent 0%,
+        rgba(255, 255, 255, 0.2) 30%,
+        rgba(255, 255, 255, 0.4) 50%,
+        rgba(255, 255, 255, 0.2) 70%,
+        transparent 100%);
+    transform: skewX(-20deg);
+    pointer-events: none;
+    z-index: 10;
+    transition: left 0.8s ease-out;
+}
+
+.gallery-card:hover .card-shine {
+    left: 100%;
+}
+
+/* AOS Fade Up Animation */
+.gallery-card[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.gallery-card[data-aos="fade-up"].aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Simulate AOS on scroll - simplified version */
+@media (prefers-reduced-motion: no-preference) {
+    .gallery-card {
+        animation: fadeUpOnLoad 0.8s ease forwards;
+    }
+    
+    .gallery-card[data-aos-delay="100"] {
+        animation-delay: 0.1s;
+        opacity: 0;
+    }
+    
+    .gallery-card[data-aos-delay="200"] {
+        animation-delay: 0.2s;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeUpOnLoad {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ============================================
@@ -1332,6 +1804,31 @@ button:hover ~ .cursor::before {
     .leaf-7,
     .leaf-8 {
         display: none;
+    }
+    
+    /* Reduce animals on mobile for performance */
+    .bird-2,
+    .bird-3,
+    .deer-2,
+    .rabbit-2,
+    .butterfly-2,
+    .butterfly-3 {
+        display: none;
+    }
+    
+    .bird,
+    .deer,
+    .rabbit,
+    .fox {
+        font-size: 1.8rem;
+    }
+    
+    .butterfly {
+        font-size: 1.2rem;
+    }
+    
+    .squirrel {
+        font-size: 1.5rem;
     }
     
     /* Sections */
